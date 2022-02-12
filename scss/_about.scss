@@ -1,0 +1,96 @@
+.about {
+    .about-landing {
+        background: url("../public/bg.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        position: relative;
+        .title {
+            font-size: unquote("clamp(2.5rem, 3vw + 1rem, 20rem)");
+            text-transform: capitalize;
+            font-family: 'Syne Tactile', cursive;
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+            z-index: 2;
+            position: relative;
+            padding-top: 50px;
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+            max-width: 80%;
+            margin: auto;
+            padding: 20px 0px;
+            .desc {
+                font-size: unquote("clamp(1rem, .5vw + 1rem, 5rem)");
+                text-align: center;
+                color: #fff;
+            }
+            .education,
+            .work,
+            .certification {
+                margin-top: 50px;
+                .title {
+                    font-size: unquote("clamp(1rem, 1.5vw + 1rem, 5rem)");
+                    text-align: left;
+                    text-transform: uppercase;
+                    color: #FF579F;
+                    padding: 10px 0px;
+                    font-family: 'Karla', sans-serif;
+                }
+                .from {
+                    font-size: unquote("clamp(1.2rem, .8vw + .8rem, 8rem)");
+                    font-weight: 700;
+                    color: #fff;
+                }
+                .what {
+                    font-size: unquote("clamp(0.9rem, .5vw + .8rem, 8rem)");
+                    padding-bottom: 20px;
+                    padding-top: 5px;
+                    word-wrap: break-word;
+                    color: rgb(212, 207, 207);
+                }
+            }
+            .skills {
+                margin-top: 50px;
+                .title {
+                    font-size: unquote("clamp(1rem, 1.5vw + 1rem, 5rem)");
+                    text-align: left;
+                    color: #FF579F;
+                    padding: 10px 0px;
+                    font-family: 'Karla', sans-serif;
+                }
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 20px;
+                    list-style: none;
+                    margin-top: 20px;
+                    li {
+                        font-size: unquote("clamp(0.9rem, .5vw + .8rem, 8rem)");
+                        font-weight: 400;
+                        border: 1px solid transparent;
+                        padding: 10px;
+                        border-radius: 1px;
+                        min-width: 100px;
+                        text-align: center;
+                        background: transparent;
+                        color: #fff;
+                        border: 1px solid #FF579F;
+                    }
+                }
+            }
+        }
+        .layer {
+            display: block;
+            position: absolute;
+            min-height: 100%;
+            min-width: 100%;
+            background: rgba(0, 0, 0, .7);
+            top: 0;
+        }
+    }
+}

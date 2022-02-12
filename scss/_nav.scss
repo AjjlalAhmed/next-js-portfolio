@@ -1,0 +1,108 @@
+.nav {
+    background: #020202;
+    padding: 25px 15px;
+    border-bottom: 1px solid #333;
+    .nav-ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        list-style: none;
+        max-width: 80vw;
+        margin: auto;
+        .logo {
+            flex-grow: 2;
+            color: #FF579F;
+            font-size: unquote("clamp(2rem, .8vw + 1rem, 8rem)");
+            text-transform: capitalize;
+            font-weight: 900;
+            font-family: 'Syne Tactile', cursive;
+        }
+        .nav-item {
+            margin: 0px 20px;
+            a {
+                text-decoration: none;
+                color: #fff;
+                text-transform: capitalize;
+                font-size: unquote("clamp(1rem, .5vw + .6rem, 5rem)");
+                transition: .3s ease-in;
+                i {
+                    margin-right: 10px;
+                    color: #FF579F;
+                }
+                &:hover {
+                    color: #FF579F;
+                }
+            }
+        }
+        .menu {
+            position: relative;
+            z-index: 3;
+            .bar {
+                span {
+                    display: block;
+                    width: 30px;
+                    height: 4px;
+                    margin: 5px;
+                    background: #FF579F;
+                }
+            }
+            .mob-nav {
+                position: absolute;
+                top: 30px;
+                left: -100px;
+                list-style: none;
+                border: 1px solid #2222;
+                box-shadow: 5px 5px 5px #2222;
+                background: #fff;
+                width: 120px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .nav-item {
+                    border: 1px solid #3333;
+                    width: 100%;
+                    text-align: center;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:768px) {
+    .nav {
+        .nav-ul {
+            .menu {
+                .mob-nav {
+                    position: absolute;
+                    top: 30px;
+                    left: -100px;
+                    list-style: none;
+                    border: 1px solid #2222;
+                    box-shadow: 5px 5px 5px #2222;
+                    background: #fff;
+                    width: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .nav-item {
+                        border: 1px solid #3333;
+                        width: 100%;
+                        text-align: center;
+                        padding: 10px;
+                        a {
+                            color: #000;
+                            font-weight: 700;
+                            i {
+                                color: #FF579F;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

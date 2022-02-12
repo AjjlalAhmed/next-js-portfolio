@@ -1,0 +1,49 @@
+.footer {
+    background: #020202;
+    padding: 20px 10px;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #333;
+    position: relative;
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        position: relative;
+        z-index: 2;
+        .icon {
+            margin: 10px 20px;
+            transition: .3s ease-in-out;
+            border-radius: 50%;
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 5px 5px 5px #2222;
+            }
+            i {
+                font-size: unquote("clamp(1rem, 1vw + 1rem, 5rem)");
+                color: #fff;
+            }
+            a {
+                font-size: unquote("clamp(1rem, 1vw + 1rem, 5rem)");
+                text-decoration: none;
+                color: #fff;
+                font-weight: 900;
+                border-radius: 50%;
+            }
+        }
+    }
+    .text {
+        color: #FF579F;
+        text-align: center;
+        font-family: 'Syne Tactile', cursive;
+        font-size: unquote("clamp(2rem, 1vw + .5rem, 5rem)");
+        text-transform: capitalize;
+        padding: 10px 0px;
+        position: relative;
+        z-index: 2;
+    }
+}

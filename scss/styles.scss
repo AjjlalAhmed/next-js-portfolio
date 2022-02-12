@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700;800&family=Syne+Tactile&display=swap');
+    font-family: 'Karla', sans-serif;
+    scroll-behavior: smooth;
+}
+
+@import "nav";
+@import "landing-page";
+@import "works";
+@import "projects-showcase";
+@import "testimonial";
+@import "contact";
+@import "footer";
+@import "about";

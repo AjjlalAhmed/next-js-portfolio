@@ -1,0 +1,79 @@
+.works {
+    padding: 10vh 0px;
+    background: #fff;
+    .title {
+        font-size: unquote("clamp(2.5rem, 3vw + 1rem, 20rem)");
+        text-transform: capitalize;
+        font-family: 'Syne Tactile', cursive;
+        padding: 10px;
+        color: #020202;
+        text-align: center;
+    }
+    .showcase {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        max-width: 80vw;
+        margin: 50px auto;
+        .card {
+            .card-title {
+                font-size: unquote("clamp(2rem, 2vw + 1rem, 20rem)");
+                text-transform: capitalize;
+                padding-bottom: 5px;
+                color: #020202;
+                font-weight: 400;
+            }
+            .desc {
+                font-size: unquote("clamp(1rem, .5vw + 1rem, 5rem)");
+                line-height: unquote("clamp(1rem, 1vw + 1rem, 5rem)");
+                color: #020202;
+                padding: 10px 0px;
+            }
+            .stacks {
+                display: flex;
+                list-style: none;
+                gap: 10px;
+                margin: 10px 0px;
+                flex-wrap: wrap;
+                .stack {
+                    padding: 5px 10px;
+                    border-radius: 3px;
+                    font-size: unquote("clamp(.8rem, .5vw + 1rem, 10rem)");
+                    color: #fff;
+                    background: #FF579F;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:768px) {
+    .works {
+        .project {
+            max-width: 100vw;
+            .title {
+                text-align: center;
+            }
+            .showcase {
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                .card {
+                    flex-wrap: wrap;
+                    max-width: 500px;
+                    .left {
+                        .poster {
+                            width: 100%;
+                            height: 100%;
+                            max-width: 300px;
+                            max-height: 250px;
+                            object-fit: fill;
+                            border: 1px solid #2222;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
