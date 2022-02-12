@@ -1,3 +1,4 @@
+// Main function
 const Works = () => {
   //   Variables
   const clientProjects = [
@@ -43,9 +44,13 @@ const Works = () => {
       stacks: ["HTML", "Css", "Scss", "Javascript", "Vue.js", "IndexedDb"],
     },
   ];
+  // Returning jsx
   return (
+    // Work
     <div id="work" className="works">
+      {/* Title  */}
       <h1 className="title">work</h1>
+      {/* Showcase  */}
       <div className="showcase">
         {clientProjects.map((item) => (
           <div className="card" key={item.id}>
@@ -62,7 +67,8 @@ const Works = () => {
         ))}
       </div>
     </div>
+    // Work
   );
 };
-
+// Exporting Main Function
 export default Works;

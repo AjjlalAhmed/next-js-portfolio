@@ -1,7 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
+// Importing thing we need
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/themes/splide-skyblue.min.css";
+// Main function
 const Testimonial = () => {
+  // Variables
   const testimonialData = [
     {
       id: 1,
@@ -28,17 +31,17 @@ const Testimonial = () => {
         "A very good experience working with ajjlal_ahmed! Definitely recommend and will be coming back in the future for more projects.",
     },
   ];
-
+  // Returning jsx
   return (
+    // Testimonial 
     <div className="testimonial">
+      {/* Titile  */}
       <h1 className="title">testimonial</h1>
+      {/* Splide  */}
       <Splide>
         {testimonialData.map((item, index) => (
           <SplideSlide key={index}>
             <div className="testi-card">
-              <div className="img">
-                <img src="/avatar.svg" alt="avater" />
-              </div>
               <p className="comment">{item.comment}</p>
               <p className="name">{item.name}</p>
               <div className="icons">
@@ -63,7 +66,8 @@ const Testimonial = () => {
         ))}
       </Splide>
     </div>
+    // Testimonial 
   );
 };
-
+// Exporting Main Function
 export default Testimonial;

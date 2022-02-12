@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-import { useEffect, useState } from "react";
-
+// Importing thing we need
+import { useState } from "react";
+// Main function
 const Contact = () => {
   // Variables
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [showNotification, setShowNotification] = useState(false);
-
   // Functions
   const submit = async (e) => {
     // Preventing page to reload
@@ -35,7 +35,7 @@ const Contact = () => {
       setShowNotification(true);
     }
   };
-
+  // Returning jsx
   return (
     // Contact
     <div className="contact">
@@ -86,7 +86,10 @@ const Contact = () => {
               <img src="/sent.svg" alt="sent sgv" />
             </div>
             <p>The form was submitted successfully</p>
-            <button onClick={(e) => setShowNotification(false)} className="exit">
+            <button
+              onClick={(e) => setShowNotification(false)}
+              className="exit"
+            >
               ok
             </button>
           </div>
@@ -95,5 +98,5 @@ const Contact = () => {
     </div>
   );
 };
-
+// Exporting Main Function
 export default Contact;

@@ -1,7 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
+// Importing thing we need
 import Footer from "../components/Footer";
-
+// Main function
 const About = () => {
+  // Variables
   const skills = [
     "HTML",
     "Css",
@@ -16,11 +18,15 @@ const About = () => {
     "Git",
     "Npm",
   ];
-
+  // Returning jsx
   return (
+    // About
     <div className="about">
+      {/* About landing  */}
       <div className="about-landing">
+        {/* Title  */}
         <h1 className="title">about</h1>
+        {/* Content  */}
         <div className="content">
           <div className="desc">
             My name is Ajjlal Ahmed, and I am a Full-Stack web developer
@@ -86,11 +92,14 @@ const About = () => {
             </ul>
           </div>
         </div>
+        {/* layer  */}
         <div className="layer"></div>
       </div>
+      {/* Footer  */}
       <Footer />
     </div>
+    // About
   );
 };
-
+// Exporting Main Function
 export default About;

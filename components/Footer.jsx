@@ -1,6 +1,10 @@
+// Main function
 const Footer = () => {
+  // Returning jsx
   return (
+    // Footer
     <div className="footer">
+      {/* Icons  */}
       <ul className="icons">
         <li className="icon">
           <a
@@ -30,10 +34,11 @@ const Footer = () => {
           </a>
         </li>
       </ul>
+      {/* Text  */}
       <p className="text">made by ajjlal ahmed</p>
-      <div className="layer"></div>
     </div>
+    // Footer
   );
 };
-
+// Exporting Main Function
 export default Footer;

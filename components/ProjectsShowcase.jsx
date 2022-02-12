@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+// Main function
 const ProjectShowcase = () => {
   // Variables
   const personalProjects = [
@@ -68,11 +69,15 @@ const ProjectShowcase = () => {
       ],
     },
   ];
-
+// Returning jsx
   return (
+    // Project showcase 
     <div  className="project-showcase">
+      {/* Project  */}
       <div className="project">
+        {/* Title  */}
         <h1 className="title">projects</h1>
+        {/* Showcase  */}
         <div className="showcase">
           {personalProjects.map((item) => (
             <div className="card" key={item.id}>
@@ -104,7 +109,8 @@ const ProjectShowcase = () => {
         </div>
       </div>
     </div>
+    // Project showcase 
   );
 };
-
+// Exporting Main Function
 export default ProjectShowcase;

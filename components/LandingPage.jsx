@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
-
+// Main function
 const LandingPage = () => {
   // Variables
   const logos = [
@@ -14,23 +14,29 @@ const LandingPage = () => {
     "/git.svg",
     "/npm.svg",
   ];
-
+  // Returning jsx
   return (
+    // Landing page
     <div className="landing-page">
+      {/* Top  */}
       <div className="top">
+        {/* Title  */}
         <h1 className="landing-page__title">
           Hi, I’m Ajjlal Ahmed | <span>Full Stack Developer</span>
         </h1>
+        {/* Description  */}
         <p className="landing-page__desc">
           I'm a self-taught passionate Full Stack Developer from Pakistan PK. I
           love being in this line of work because I'm passionate about
           technology and innovation.
         </p>
+        {/* View work button  */}
         <div className="btn">
           <a className="action-btn" href="#work">
             view work
           </a>
         </div>
+        {/* Icons  */}
         <div className="social-icons">
           <ul className="icons">
             <li className="icon">
@@ -63,9 +69,11 @@ const LandingPage = () => {
           </ul>
         </div>
       </div>
+      {/* layer  */}
       <div className="layer"></div>
     </div>
+    // Landing page
   );
 };
-
+// Exporting Main Function
 export default LandingPage;

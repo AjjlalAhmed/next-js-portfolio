@@ -1,15 +1,14 @@
+// Importing thing we need
 import Link from "next/link";
 import { useEffect, useState } from "react";
+// Main function
 const Nav = () => {
   // Variables
   const mobileWidth = 768;
   const [showMenuButton, setShowMenuButton] = useState(null);
   const [showMenu, setShowMenu] = useState(null);
-
   // Functions
-
   const toggleMenu = () => setShowMenu(!showMenu);
-
   // Life cycle
   useEffect(() => {
     if (window.innerWidth < mobileWidth) setShowMenuButton(true);
@@ -18,12 +17,15 @@ const Nav = () => {
       else setShowMenuButton(false);
     });
   }, []);
-
   // Returning jsx
   return (
+    // Nav
     <nav className="nav">
+      {/* Nav ul  */}
       <ul className="nav-ul">
+        {/* Logo  */}
         <li className="logo">ajjlal ahmed</li>
+        {/* Desktop menu  */}
         {!showMenuButton && (
           <>
             {" "}
@@ -42,7 +44,7 @@ const Nav = () => {
             )
           </>
         )}
-
+        {/* Mobile menu  */}
         {showMenuButton && (
           <li className="menu">
             <div onClick={toggleMenu} className="bar">
@@ -73,7 +75,8 @@ const Nav = () => {
         )}
       </ul>
     </nav>
+    // Nav
   );
 };
-
+// Exporting Main Function
 export default Nav;
