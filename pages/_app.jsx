@@ -10,6 +10,10 @@ function MyApp({ Component, pageProps }) {
     <div className="container">
       {/* Setting meta info  */}
       <Head>
+        <meta
+          name="google-site-verification"
+          content="scCx-jKSsQ8W82wq_DGjfviCcAFKbdK7mA6D06HXM44"
+        />
         <link rel="shortcut icon" href="/favicon-32x32.png" />
         <link
           rel="stylesheet"
