@@ -82,7 +82,7 @@ const ProjectShowcase = () => {
           {personalProjects.map((item) => (
             <div className="card" key={item.id}>
               <div className="left">
-                <img className="poster" src={item.imgSrc} alt="project-image" />
+                <img className="poster" loading="lazy" src={item.imgSrc} alt="project-image" />
               </div>
 
               <div className="right">
