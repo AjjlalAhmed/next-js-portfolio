@@ -1,8 +1,9 @@
 .about {
+    background: #000;
     .about-landing {
         background: url("/bg.jpg");
         background-size: cover;
-        background-position: center;
+        background-position: top;
         background-repeat: no-repeat;
         min-height: 100vh;
         position: relative;

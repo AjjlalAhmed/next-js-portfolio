@@ -7,7 +7,7 @@ const ProjectShowcase = () => {
       id: 1,
       title: "url shortner ",
       desc: "A HTTP service to short the URL with the limit count on how many times that shorten URL can be used. This project is made using NodeJS ExpressJS and MongoDB.How it works User enters a valid URL into the form. If the format is valid, the webpage will respond with a JSON containing the original url and shortened url. If the URL is not valid or does not exist, the api will respond with an error saying Invalid URL.",
-      imgSrc: "/urlst.jpg",
+      imgSrc: "/urlst.png",
       url: "https://urlshorteneraj.herokuapp.com/",
       stacks: [
         "HTML",
@@ -24,7 +24,7 @@ const ProjectShowcase = () => {
       id: 2,
       title: "jfake ",
       desc: "FakeApi can be used to fetch JsonData for your website. you can use examples below to check how fakeApi works and feel free to enjoy it in your awesome projects!",
-      imgSrc: "/jfake.jpg",
+      imgSrc: "/jfake.png",
       url: "https://jfakeapi.herokuapp.com/",
       stacks: [
         "HTML",
@@ -40,7 +40,7 @@ const ProjectShowcase = () => {
       id: 3,
       title: "weather app ",
       desc: "Use the Weather app to check the weather for your current location or in other places.",
-      imgSrc: "/weather.jpg",
+      imgSrc: "/weather.png",
       url: "https://weather-app-aj.web.app/",
       stacks: [
         "HTML",
